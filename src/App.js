@@ -19,6 +19,9 @@ function App() {
       <button onClick={effacer}>
         Effacer
       </button>
+      <button onClick={annuler}>
+        Annuler
+      </button>
       <CanvasDraw 
        brushRadius={0.3} 
         hideGrid={true}
