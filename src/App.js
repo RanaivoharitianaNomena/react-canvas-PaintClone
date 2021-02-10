@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import React, {useRef} from 'react'
+import CanvasDraw from 'react-canvas-draw'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CanvasDraw 
+       brushRadius={0.3} 
+      hideGrid={true}
+      style={{border:'1px solid #000'}}
+      />
     </div>
   );
 }
