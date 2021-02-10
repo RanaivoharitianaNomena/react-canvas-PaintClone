@@ -27,6 +27,8 @@ function App() {
         hideGrid={true}
         style={{border:'1px solid #000'}}
         ref={firstCanvas}
+        canvasHeight={768}
+        canvasWidth={1366}
       />
     </div>
   );
