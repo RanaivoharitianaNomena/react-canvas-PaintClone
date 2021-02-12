@@ -5,7 +5,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f2f2fc;
   height: 50%;
-  padding-bottom: 120px; }
+  padding-bottom: 120px;
+  min-width: 590px; }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
