@@ -19,22 +19,22 @@ function App() {
   }
 
   return (
-    <div>
-      <button onClick={effacer}>
+    <div class="container-canvas">
+      <button id="clear" onClick={effacer}>
         Effacer
       </button>
-      <button onClick={annuler}>
+      <button id="undo" onClick={annuler}>
         Annuler
       </button>
 
       
-      <CanvasDraw 
-       brushRadius={1} 
-        hideGrid={true}
-        style={{border:'1px solid #000'}}
+      <CanvasDraw
+        id = "canvas" 
+        brushRadius={1} 
+        hideGrid={true} 
         ref={firstCanvas}
-        canvasHeight={768}
-        canvasWidth={1366}
+        canvasHeight={600}
+        canvasWidth={800}
       />
 
       
