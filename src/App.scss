@@ -37,15 +37,85 @@
     }
   }
 
-  .container-canvas{
+  .container-canvas{ 
       display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%; 
       height: 100%; 
 
+
+      .palette{
+        background: rgb(252, 252, 252);
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        border-bottom-left-radius: 5em;
+        border-bottom-right-radius: 5em;
+        margin-bottom: 60px;
+        width: 80%;
+        border-bottom : 1px solid rgba(5, 5, 8, 0.253);
+        box-shadow: 0 0 20px rgba(21, 20, 34, 0.15);
+
+        .button-component{ 
+            padding : 10px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-top: 0;
+            border-right: 1px solid rgba(5, 5, 8, 0.253);
+            
+            width: 140px; 
+
+            #undo{
+                padding:0;
+                margin:0;
+                width: 50%;
+                font-size: 2em;
+                background: none;
+                border:none; 
+	            transition: all 0.35s ease;
+                &:hover{ 
+                    font-size: 3em;
+                    cursor: pointer;
+                }
+            }
+             #clear{
+                padding:0;
+                margin:0;
+                margin-top: 5px;
+                width: 50%;
+                font-size: 1.7em;
+                background: none;
+                border:none; 
+	            transition: all 0.35s ease;
+                &:hover{ 
+                    font-size: 2.5em;
+                    cursor: pointer;
+                }
+            }
+        }
+        .color-component{ 
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-right: 1px solid rgba(5, 5, 8, 0.253);
+            width: 45%;
+        }
+        .information-component{  
+            padding-left: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 500px;
+            box-shadow: 0 0 0 ;
+        }
+
+     } 
+
   }
   
-  div.container-canvas :nth-child(3){
-    align: center; 
-    -webkit-box-shadows: 0 0 20px rgba(48,46,77,0.15);
-    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+  div.container-canvas :nth-child(3){    
+    box-shadow: 0 0 20px rgba(21, 20, 34, 0.15);
 }

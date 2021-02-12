@@ -20,12 +20,30 @@ function App() {
 
   return (
     <div class="container-canvas">
-      <button id="clear" onClick={effacer}>
-        Effacer
-      </button>
-      <button id="undo" onClick={annuler}>
-        Annuler
-      </button>
+      <div class = "palette">
+
+        <div class ="button-component">
+          <button id="clear" onClick={effacer}>
+            &#10005;
+          </button>
+          <button id="undo" onClick={annuler}>
+            &#8635;
+          </button>
+        </div>
+
+        <div class ="color-component">  
+        </div>
+
+        <div class ="information-component"> 
+        <p>
+            RANAIVOHARITIANA Fiarenantsoa Andry Nomena IGGLIA 5 n°06
+          </p>
+          <p >
+            RAZAFIMANANTSOA José Harisson IGGLIA 5 n°12
+          </p>
+        </div>
+
+      </div>
 
       
       <CanvasDraw
